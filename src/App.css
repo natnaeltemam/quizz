@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Karla:ital,wght@0,400;0,700;1,300;1,800&display=swap');
+
+:root {
+    --desktop: 1200px;
+    --laptop: 1024px;
+    --tablet: 768px;
+    --phone: 480px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+
+}
+
+.App {
+
+    background: #F5F7FB;
+}
+
+h1 {
+    margin: 0px;
+}
+
+.Start {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh;
+    color: #293264;
+    background-image: url('./img/orange.webp');
+    background-size: 1200px;
+    height: 640px;
+
+
+
+}
+
+.ka {
+    font-family: Karla, Helvetica, sans-serif;
+    font-weight: 800px;
+    font-style: italic;
+}
+
+.in {
+    font-family: Inter, Helvetica, sans-serif;
+    ;
+    font-weight: 400px;
+}
+
+button {
+    background: #4D5B9E;
+    border-radius: 15px;
+    width: auto;
+    height: 52px;
+    padding: 0 30px;
+    color: #F5F7FB;
+
+
+}
+
+.Quis {
+
+    background-image: url('./img/55da.jpg');
+
+    background-size: 1400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.allQ {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.choseq {
+    font-family: Karla, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #ffffff
+}
+
+.ch {
+    background-color: #F5F7FB;
+    color: black;
+    border: 0.79px solid #4D5B9E;
+    border-radius: 8px;
+    height: 30px;
+    width: auto;
+    min-width: 75px;
+    display: inline;
+    font-family: Inter;
+    padding: 3px 8px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 12px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    cursor: pointer;
+
+}
+
+.ch:hover {
+    background: rgb(255, 166, 0);
+
+}
+
+.allQ {
+    margin-top: 40px;
+}
+
+.que {
+    margin-bottom: 17px;
+    border-bottom: 0.79px solid #DBDEF0;
+    width: 600px;
+}
+
+.quezz {
+
+    max-width: 362px;
+    width: auto;
+}
+
+.choose {
+    max-width: 500px;
+    width: auto;
+}
+
+.chAnswer {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+.count {
+    color: #ffa500;
+    padding-right: 25px;
+    font-family: Inter, Helvetica, sans-serif;
+    font-weight: 700px;
+    font-size: 15px;
+    line-height: 15px;
+    letter-spacing: 0em;
+
+}
+
+.home {
+    margin-left: 30px;
+}
+
+input {
+    height: 30px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-family: Inter, Helvetica, sans-serif;
+    font-weight: 700px;
+    width: 400px;
+    padding: 15px;
+}
+
+select {
+    text-align: center;
+    height: 30px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-family: Inter, Helvetica, sans-serif;
+    font-weight: 700px;
+    width: 400px;
+
+}
+
+label {
+    font-family: Karla, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: black;
+    margin-bottom: px;
+}
+
+@media screen and (max-width: 580px) {
+    .Quis {
+        width: auto;
+
+
+    }
+
+    .que {
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .Start {
+        background-image: url('./img/55da.jpg');
+        display: block;
+    }
+
+}
