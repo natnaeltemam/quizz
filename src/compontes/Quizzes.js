@@ -10,24 +10,24 @@ function Quizzes(props) {
     const [final_Answer, setFinalAnswer] = React.useState({ count: 0, isfinshined: false })
     const [count, setCount] = React.useState(0)
     let navigate = useNavigate()
-    // function creat_url_api() {
-    //     let url_api = "https://opentdb.com/api.php?"
-    //     url_api += `amount=${props.value['number']}`
-    //     if (props.value['catgory'] !== "") {
-    //         url_api += `&category=${props.value['catgory']}`
-    //     }
-    //     if (props.value['diffculty'] !== "") {
-    //         url_api += `&difficulty=${props.value['diffculty']}`
-    //     }
-    //     url_api += "&type=multiple"
-    //     return url_api
-    // }
-    // const url_value = creat_url_api()
-    // React.useEffect(function () {
-    //     fetch(url_value)
-    //         .then(res => res.json())
-    //         .then(data => setQuizzes(data.results))
-    // }, [count, url_value])
+    function creat_url_api() {
+        let url_api = "https://opentdb.com/api.php?"
+        url_api += `amount=${props.value['number']}`
+        if (props.value['catgory'] !== "") {
+            url_api += `&category=${props.value['catgory']}`
+        }
+        if (props.value['diffculty'] !== "") {
+            url_api += `&difficulty=${props.value['diffculty']}`
+        }
+        url_api += "&type=multiple"
+        return url_api
+    }
+    const url_value = creat_url_api()
+    React.useEffect(function () {
+        fetch(url_value)
+            .then(res => res.json())
+            .then(data => setQuizzes(data.results))
+    }, [count, url_value])
 
     function ChooseSelect(id) {
         seteachQuizz(prevQuiz => {
