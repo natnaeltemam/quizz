@@ -161,8 +161,14 @@ function Quizzes(props) {
 
     return (
         <div className='Quis'>
+
             <div className='allQ'>
                 {(final_Answer.count === props.value.number) && <Confetti />}
+                <button
+                    className='home'
+                    onClick={() => {
+                        navigate('/quizz')
+                    }}>Home page</button>
                 {Quizz}
 
                 <div className="chAnswer">
@@ -173,11 +179,7 @@ function Quizzes(props) {
                         value={final_Answer.isfinshined ? 'Play again' : 'Check answers'}>
                         {final_Answer.isfinshined ? 'Play again' : 'Check answers'}
                     </button>
-                    <button
-                        className='home'
-                        onClick={() => {
-                            navigate('/')
-                        }}>Home page</button>
+
                 </div>
 
 
