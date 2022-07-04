@@ -201,7 +201,7 @@ label {
     }
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:480px) {
     .Start {
         background-image: url('./img/orange.webp');
 
@@ -231,6 +231,19 @@ label {
         font-weight: 700px;
         width: 300px;
 
+    }
+
+    .choose {
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+        margin-left: 25px;
+
+    }
+
+    .choseq {
+        margin-left: 25px;
+        max-width: 350px;
     }
 
 }
